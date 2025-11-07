@@ -18,6 +18,8 @@
         .logo svg{width:56px;height:56px;}
         .search{background:var(--border);border-radius:50px;padding:.5rem 1rem;display:flex;align-items:center;gap:10px;flex:1;max-width:400px;}
         .search input{background:none;border:none;color:var(--text);width:100%;outline:none;}
+        .yt-link{color:var(--g);font-weight:bold;text-decoration:none;display:flex;align-items:center;gap:6px;font-size:.9rem;}
+        .yt-link i{color:#ff0000;}
 
         /* === MOBILE FIRST === */
         main{flex:1;display:flex;flex-direction:column;max-width:100%;padding:0;}
@@ -50,6 +52,8 @@
         footer{text-align:center;padding:1.5rem;background:var(--card);border-top:1px solid var(--border);font-size:.9rem;opacity:.7;}
         .btn{display:inline-flex;align-items:center;gap:10px;background:var(--p);color:#111;padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:bold;margin-top:1rem;}
         .btn:hover{background:#a6d1ff;}
+        .btn.yt{background:#ff0000;color:#fff;}
+        .btn.yt:hover{background:#cc0000;}
 
         /* === ZOOM 58% SUR MOBILE === */
         @media (max-width:767px){
@@ -73,7 +77,15 @@
             <path d="M50 36 L50 64 M36 50 L64 50" stroke="url(#g)" stroke-width="5" stroke-linecap="round"/>
             </svg>
         </div>
-        <div><h1 style="font-size:1.8rem;margin:0;">Manjaro KDE Wiki</h1><small>100 % hors-ligne • 1 seul fichier</small></div>
+        <div>
+            <h1 style="font-size:1.8rem;margin:0;">Manjaro KDE Wiki</h1>
+            <small>100 % hors-ligne • 1 seul fichier</small>
+            <div style="margin-top:4px;">
+                <a href="https://youtube.com/@WithercoreYT" target="_blank" class="yt-link">
+                    <i class="fab fa-youtube"></i> WithercoreYT
+                </a>
+            </div>
+        </div>
     </div>
     <div class="search"><i class="fas fa-search" style="color:#89b4fa"></i><input type="text" placeholder="Rechercher…" id="search"></div>
 </header>
@@ -112,8 +124,13 @@
 <section class="content">
     <article id="home" class="active">
         <h1>Bienvenue</h1>
-        <p>Ton wiki Manjaro complet dans un seul fichier. Fonctionne partout, même sans internet !</p>
-        <p><a href="#download" class="btn">Télécharger l’ISO maintenant</a></p>
+        <p>Bienvenue sur le wiki de Manjaro</p>
+        <p>
+            <a href="#download" class="btn">Télécharger l’ISO maintenant</a>
+            <a href="https://youtube.com/@WithercoreYT" target="_blank" class="btn yt">
+                <i class="fab fa-youtube"></i> Ma chaîne YouTube
+            </a>
+        </p>
     </article>
 
     <article id="download">
@@ -183,7 +200,12 @@ sudo systemctl enable --now zram-generator</pre>
     <div class="mini"><div id="prog"></div></div>
 </div>
 
-<footer>Wiki auto-adaptatif • 07 nov. 2025</footer>
+<footer>
+    Wiki auto-adaptatif • 07 nov. 2025<br>
+    <a href="https://youtube.com/@WithercoreYT" target="_blank" style="color:var(--g);text-decoration:none;">
+        <i class="fab fa-youtube"></i> WithercoreYT
+    </a>
+</footer>
 
 <script>
 /* ==== Navigation ==== */
